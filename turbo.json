@@ -4,6 +4,14 @@
     "dev": {
       "cache": false,
       "persistent": true
+    },
+    "lint": {
+      "cache": true,
+      "persistent": false
+    },
+    "build": {
+      "dependsOn": ["^build", "lint"],
+      "outputs": ["dist/**"]
     }
   }
 }

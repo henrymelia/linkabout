@@ -8,7 +8,10 @@
     "apps/*"
   ],
   "scripts": {
-    "dev": "turbo run dev"
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "lint": "turbo run lint",
+    "start": "node apps/api/dist/main"
   },
   "devDependencies": {
     "turbo": "^1.10.12"
